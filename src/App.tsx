@@ -1,7 +1,12 @@
 import React from 'react';
 
-const App = () => {
-  return <div>React Starter Kit in TypeScript</div>;
+interface AppProps {
+  message: string;
+}
+
+const App = ({message}: { message: string }) => {
+  // const { message } = props; /* propsのなかからmessageだけ取り出す（分割代入）*/
+  return <div>{message}</div>;
 };
 
 export default App;
