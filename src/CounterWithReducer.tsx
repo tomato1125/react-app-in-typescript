@@ -25,7 +25,7 @@ function CounterWithReducer() {
       Count: {state.count}
       <button onClick={() => dispatch({type: 'decrement'})}>-</button>
       <button onClick={() => dispatch({type: 'increment'})}>+</button>
-      <button onClick={() => dispatch({type: 'reset'})}>reset</button>
+      <button onClick={() => dispatch({type: 'reset'})}>0</button>
 
     </>
   );
